@@ -3,5 +3,5 @@
 .RData
 .Ruserdata
 _quarto.yml
-
+/.data/
 /.quarto/
