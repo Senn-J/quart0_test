@@ -6,14 +6,36 @@ title: "01_regression"
 
 wir machen das jetzt in Quarto
 
-```{r}
+```{r looad}
 library(e1071)
 library(kernlab)
 library(randomForest)
+library(terra)
+library(sf)
+library(rasterVis)
+library(RColorBrewer)
+library(ggplot2)
+library(tidyverse)
+
 ```
 
 ohgott ich check alles nicht
 
 ```{r}
+s2_img <- rast("data/murnau/s2_murnau_dhdn_4.tif")
+hym_img <- rast("data/murnau/murnau.hymap")
 
+```
+
+```{r}
+plotRGB(s2_img, r=3, g=2, b=1, stretch="hist")
+```
+
+```{r peter}
+
+irisa <- iris[,c(1,2,5)]
+irisb <- iris[,c(3,4,5)]
+cor(t(irisa),t(irisb),method = "pearson",use = "pairwise.complete.obs")
+
+rowwise(t(irisa[,1:2]),t(irisb[,1:2]),cor())
 ```
