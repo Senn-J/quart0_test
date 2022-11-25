@@ -11,3 +11,6 @@ Encoding: UTF-8
 
 RnwWeave: Sweave
 LaTeX: pdfLaTeX
+
+BuildType: Website
+WebsitePath: C:/Users/b8045831/OneDrive - bwstaff/Lehre/002 Methoden der Umweltforschung/WS22-23/R Fernerkundung/quart0_test
